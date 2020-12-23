@@ -513,5 +513,127 @@ header .nav_link:hover::after {
     transform: translateY(-10px);
   }
 }
+/* Contact */
+.contact {
+  background: #000;
+  padding: 5rem 0;
+  text-align: center;
+}
+.contact_title {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+.contact_text {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+}
+.contact_link {
+  width: 144px;
+  display: inline-flex;
+  margin-top: 50px;
+  align-items: center;
+  transform: translateX(0);
+  transition: all 0.3s 0.2s ease;
+}
+.contact_link-text {
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+}
+.contact_link-text::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background: #303030;
+  z-index: -1;
+  border-radius: 50px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.contact_link-line {
+  position: relative;
+  width: 20px;
+  height: 1px;
+  background: #fff;
+  margin-left: 10px;
+}
+.contact_link-line::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  width: 8px;
+  height: 1px;
+  transform-origin: center right;
+  transform: rotate(-35deg);
+}
+.contact_link-line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  width: 8px;
+  height: 1px;
+  transform-origin: center right;
+  transform: rotate(35deg);
+}
+
+.contact_link:hover {
+  transform: translateX(15px);
+}
+
+.contact_link:hover .contact_link-text::before {
+  width: 184%;
+  border-radius: 30px;
+}
+
+.footer {
+  background: #000;
+  position: relative;
+  z-index: 1;
+  padding: 1rem 0;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_copy-text {
+  font-size: 12px;
+  color: #fff;
+}
+.footer_social-link {
+  margin-right: 1rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  background: transparent;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.3s;
+}
+.footer_social-link:nth-child(3) {
+  margin-right: 0;
+}
+.footer_social-link:hover {
+  color: #000;
+  background: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
